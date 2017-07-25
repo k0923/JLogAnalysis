@@ -1,0 +1,27 @@
+﻿ShopQueryWithConditionRequest[
+	queryConditions={
+		ShopIdQueryCondition[
+			shopId=2015042500077000000000013931,
+			queryConditionType=SHOP_ID
+		],
+		ExternalShopIdQueryCondition[
+			externalShopId=out1429947200589,
+			partnerId=2088001969784501,
+			customerId=2088001969784501,
+			queryConditionType=EXTERNAL_SHOP_ID
+		],
+		SmIdQueryCondition[
+			smId=2088202852798685,
+			queryConditionType=SMID
+		],
+		ImplementIdQueryCondition[
+			implementId=pos1429947200589,
+			partnerId=2088001969784501,
+			queryConditionType=IMPLEMENT_ID
+		]
+	},
+	queryOptions=[
+		SHOP_INFO,
+		BINDING
+	]
+]

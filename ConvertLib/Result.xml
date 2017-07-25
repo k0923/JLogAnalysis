@@ -1,0 +1,143 @@
+<bean>
+  <property name="shopDetail">
+    <bean>
+      <property name="shopId" value="2017071200077000000004452828" />
+      <property name="principalId" value="2088202850696095" />
+      <property name="headShopName" value="无证门店_1499865858692" />
+      <property name="categoryId" value="2015050700000010" />
+      <property name="brandId" value="2015050700000000" />
+      <property name="keyPerson">
+        <bean>
+          <property name="kpName" value="承佑" />
+          <property name="kpTelNo" value="15800648661" />
+          <property name="kpJob" value="SHOP_OTHER" />
+        </bean>
+      </property>
+      <property name="location">
+        <bean>
+          <property name="address" value="民生路1199弄证大五道口广场29楼" />
+          <property name="longitude" value="121.550053" />
+          <property name="latitude" value="31.226217" />
+          <property name="provinceId" value="310000" />
+          <property name="cityId" value="310100" />
+          <property name="districtId" value="310115" />
+        </bean>
+      </property>
+      <property name="contactInfo">
+        <bean>
+          <property name="mobileNo" value="15800648662" />
+        </bean>
+      </property>
+      <property name="payType" value="online_pay" />
+      <property name="shopType" value="COMMON" />
+      <property name="shopPicture">
+        <bean>
+          <property name="logo">
+            <bean>
+              <property name="location" value="0NLz-aBITkiukwfxD-gMFgAAACMAAQQD" />
+              <property name="name" value="门店内景" />
+              <property name="seq" value="-1" />
+            </bean>
+          </property>
+          <property name="cover">
+            <bean>
+              <property name="location" value="0NLz-aBITkiukwfxD-gMFgAAACMAAQQD" />
+              <property name="name" value="门店内景" />
+              <property name="seq" value="-1" />
+            </bean>
+          </property>
+          <property name="pictureDetails">
+            <list>
+              <bean>
+                <property name="location" value="0NLz-aBITkiukwfxD-gMFgAAACMAAQQD" />
+                <property name="name" value="门店内景" />
+                <property name="seq" value="-1" />
+              </bean>
+              <bean>
+                <property name="location" value="186B0Z4SS4WUvvVbF1I7mQAAACMAAQED" />
+                <property name="name" value="门店内景" />
+                <property name="seq" value="-1" />
+              </bean>
+              <bean>
+                <property name="location" value="1BpLucgjRcuzPhn-MbSWzwAAACMAAQQD" />
+                <property name="name" value="门店内景" />
+                <property name="seq" value="-1" />
+              </bean>
+              <bean>
+                <property name="location" value="1CU_MR1bR0Gf_3xfFiK7GQAAACMAAQQD" />
+                <property name="name" value="门店内景" />
+                <property name="seq" value="-1" />
+              </bean>
+            </list>
+          </property>
+        </bean>
+      </property>
+      <property name="serviceData">
+        <bean>
+          <property name="serviceDetails">
+            <list>
+              <bean>
+                <property name="key" value="PARKING" />
+                <property name="name" value="停车位" />
+                <property name="isSupported" value="false" />
+              </bean>
+              <bean>
+                <property name="key" value="WIFI" />
+                <property name="name" value="wifi" />
+                <property name="isSupported" value="false" />
+              </bean>
+              <bean>
+                <property name="key" value="BOX" />
+                <property name="name" value="包间" />
+                <property name="isSupported" value="false" />
+              </bean>
+              <bean>
+                <property name="key" value="NO_SMOKING" />
+                <property name="name" value="无烟区" />
+                <property name="isSupported" value="false" />
+              </bean>
+            </list>
+          </property>
+        </bean>
+      </property>
+    </bean>
+  </property>
+  <property name="clearFieldsClause">
+    <bean>
+      <property name="clearFields">
+        <list>
+          <value>implementIds</value>
+          <value>outShopId</value>
+          <value>businessTime</value>
+          <value>perPay</value>
+          <value>branchShopName</value>
+          <value>addressMemo</value>
+          <value>otherServiceInfo</value>
+        </list>
+      </property>
+    </bean>
+  </property>
+  <property name="modifyMode" value="MODIFY_DIRECT" />
+  <property name="operatorInfo">
+    <bean>
+      <property name="opId" value="40447" />
+      <property name="opIdType" value="BUC" />
+      <property name="opName" value="chengyou.zy" />
+      <property name="opRole" value="SALES_STAFF" />
+      <property name="jobId" value="31" />
+    </bean>
+  </property>
+  <property name="requestId" value="ea37310551864fdf9a5298da6e0bfe0b" />
+  <property name="bizSource" value="sales_mg" />
+  <property name="channel" value="pc" />
+  <property name="extInfo">
+    <map>
+      <entry>
+        <key>
+          <value>licenceMode</value>
+        </key>
+        <value>N</value>
+      </entry>
+    </map>
+  </property>
+</bean>
