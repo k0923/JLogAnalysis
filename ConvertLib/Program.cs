@@ -20,7 +20,7 @@ namespace ConvertLib
             //File.WriteAllText("Result.xml", root.ToString());
             var jLog = new JLog<JsonNode, JContainer>();
             jLog.Analysis(log);
-
+            File.WriteAllText("tmp.txt",jLog.Root.ToString());
             //var jLog = new JLog<XmlNode, XElement>();
             //jLog.Analysis(log);
             //File.WriteAllText("Result.xml", jLog.Root.ToString());

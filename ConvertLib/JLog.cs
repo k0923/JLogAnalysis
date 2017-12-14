@@ -34,7 +34,7 @@ namespace ConvertLib
             factory = new T1();
         }
 
-
+        private T lastFieldNode;
 
         public void Analysis(string log)
         {
@@ -80,6 +80,8 @@ namespace ConvertLib
 
         private void openFlag(char c)
         {
+            lastFieldNode = null;
+            isSimple = true;
             var dataContent = new string(content.ToArray());
             Tuple<T, int> result = null;
 
@@ -127,7 +129,6 @@ namespace ConvertLib
 
         private void closeFlag(char c)
         {
-            var data = new string(content.ToArray());
             addField();
             content.Clear();
             var count = flags.Pop();
@@ -149,28 +150,41 @@ namespace ConvertLib
 
         private void addField()
         {
-            var dataContent = new string(content.ToArray());
-            if (dataContent == "")
-                return;
-            if (dataContent.Contains("="))
+            if (content.Count == 0)
             {
-                var pair = dataContent.Split('=');
+                return;
+            }
+            var dataContent = new string(content.ToArray());
+            if (content.Contains('='))
+            {
+                isSimple = false;
+                var pair = dataContent.Split('=', 2, StringSplitOptions.None);
                 if (pair[1] == "<null>")
                 {
                     factory.AddField(Root, pair[0], null, isMap);
                 }
                 else
                 {
-                    factory.AddField(Root, pair[0], pair[1], isMap);
+                    lastFieldNode = factory.AddField(Root, pair[0], pair[1], isMap);
                 }
             }
             else
             {
-                factory.AddSimpleField(Root, dataContent);
+                if (isSimple)
+                {
+                    factory.AddSimpleField(Root, dataContent);
+                }
+                else
+                {
+                    dataContent = "," + dataContent;
+                    factory.ModifyField(lastFieldNode, dataContent);
+                }
             }
-
             content.Clear();
-
         }
+
+        private bool isSimple = false;
     }
+
+
 }

@@ -1,0 +1,181 @@
+{
+  "MerchantActivityCreateRequest": {
+    "outBizNo": "outBizNo-43483624718",
+    "name": "单品代金",
+    "sourceType": "ISV",
+    "sourceChannel": "2088101118574628",
+    "possessorInfo": {
+      "ownerId": "2088101118574628",
+      "ownerType": "MER"
+    },
+    "startTime": "TueJul2500:00:00CST2017",
+    "endTime": "ThuJul1200:00:00CST2018",
+    "type": "DIRECT_SEND",
+    "autoDelayFlag": null,
+    "desc": "test",
+    "budgetInfo": {
+      "type": "QUANTITY",
+      "budgetTotal": "10453",
+      "subDimension": null,
+      "subValue": null
+    },
+    "constraintInfo": {
+      "userWinCount": "5",
+      "userWinFrequency": "D||4",
+      "crowdGroupId": "",
+      "crowdRestriction": null,
+      "crowdRestrictionValue": null,
+      "fundPoolId": null,
+      "thirdPartyRatio": null,
+      "merchantId": null,
+      "suitShops": [
+        "2017071100077000000004449500"
+      ],
+      "minCost": null,
+      "itemIds": [],
+      "whiteListId": null,
+      "isIsvKoufuActivity": "false"
+    },
+    "promoTools": [
+      {
+        "isCreate": "0",
+        "promoToolId": null,
+        "voucherNo": null,
+        "voucher": {
+          "type": "MONEY",
+          "name": "单代名",
+          "subTitle": "单代品牌",
+          "brandName": "单代品牌",
+          "useInstructions": [],
+          "logo": "1T8Pp00AT7eo9NoAJkMR3AAAACMAAQEC",
+          "voucherImg": "1T8Pp00AT7eo9NoAJkMR3AAAACMAAQEC",
+          "rate": "0.38",
+          "maxAmount": "",
+          "worthValue": "20",
+          "reduceRanges": null,
+          "donateFlag": "true",
+          "validateType": "FIXED",
+          "verifyMode": null,
+          "multiUseMode": null,
+          "startTime": "WedJul1200:00:00CST2017",
+          "endTime": "SatJul1400:00:00CST2018",
+          "relativeTime": "",
+          "useRule": {
+            "availableTime": [
+              {
+                "dimension": "W",
+                "values": "1,3,5",
+                "times": "00:00:00,23:59:00"
+              },
+              {
+                "dimension": "W",
+                "values": "2,4,6",
+                "times": "00:00:00,23:59:00"
+              }
+            ],
+            "forbiddenTime": {
+              "days": "2016-03-03,2016-03-08^2016-10-01,2016-10-01"
+            },
+            "suitShops": [
+              "2017071100077000000004449500"
+            ],
+            "minConsume": "10",
+            "paychannels": null,
+            "payRedirectUrl": null,
+            "extInfo": {}
+          },
+          "effectType": "IMMEDIATELY",
+          "delayInfo": {
+            "type": "ABSOLUTELY",
+            "value": "1440"
+          },
+          "itemInfo": {
+            "itemText": "迪斯尼text",
+            "itemName": "迪斯尼",
+            "itemImgs": [
+              "1T8Pp00AT7eo9NoAJkMR3AAAACMAAQEC"
+            ],
+            "itemLink": "",
+            "originalPrice": "100",
+            "maxDiscountNum": "2",
+            "totalMaxDiscountNum": null,
+            "minConsumeNum": null,
+            "itemIds": [
+              "444445555"
+            ],
+            "itemDiscountRule": null
+          },
+          "desc": "券的详细描述",
+          "clauseTerms": [
+            {
+              "title": "XXX1",
+              "descriptions": [
+                "xx1",
+                "xx2"
+              ]
+            },
+            {
+              "title": "XXX2",
+              "descriptions": [
+                "xx3",
+                "xx4"
+              ]
+            }
+          ],
+          "displayConfig": {
+            "slogan": "券标语slogan",
+            "sloganImg": "1T8Pp00AT7eo9NoAJkMR3AAAACMAAQEC"
+          },
+          "voucherNote": null,
+          "extInfo": {},
+          "subtype": null
+        },
+        "pointCard": null,
+        "sendType": null,
+        "sendRule": {
+          "minCost": "10",
+          "sendNum": null,
+          "sendBudget": null,
+          "allowRepeatSend": null
+        },
+        "status": null
+      }
+    ],
+    "publishChannels": [
+      {
+        "type": "QR_CODE",
+        "name": "ChannelQRCode",
+        "config": {},
+        "extInfo": {}
+      },
+      {
+        "type": "SHORT_LINK",
+        "name": "ChannelShortLink",
+        "config": {},
+        "extInfo": {}
+      },
+      {
+        "type": "SHOP_DETAIL",
+        "name": "SHOP_DETAILName",
+        "config": {},
+        "extInfo": {}
+      },
+      {
+        "type": "PAYMENT_RESULT",
+        "name": "PAYMENT_RESULTName",
+        "config": {},
+        "extInfo": {}
+      }
+    ],
+    "notifyInfoDTO": null,
+    "exterfaceInvokeJson": "null",
+    "isObtainRelativeInfo": "false",
+    "bizContextInfos": {},
+    "extInfos": {
+      "isv_app_id": "2015102400040091",
+      "ENABLED_TRIGGER_TYPE": "AUTO",
+      "CAMPAIGN_REGION_SUMMARY": "",
+      "STARTED_TRIGGER_TYPE": "AUTO"
+    }
+  }
+}

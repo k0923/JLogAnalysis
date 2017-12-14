@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Xml.Linq;
+using System.Linq;
 
 namespace ConvertLib
 {
@@ -12,7 +13,9 @@ namespace ConvertLib
 
         Tuple<T, int> AddRootNode(T container, string name);
 
-        void AddField(T container, string name, object value, bool isMap);
+        T AddField(T container, string name, object value, bool isMap);
+
+        void ModifyField(T field, object value);
 
         void AddSimpleField(T container, object value);
 
@@ -27,6 +30,8 @@ namespace ConvertLib
         Tuple<T, int> AddMapNode(T container, string name);
 
         T Merge(IEnumerable<T> elements);
+
+
     }
 
     public class XmlNode : INode<XElement>
@@ -45,28 +50,37 @@ namespace ConvertLib
             return new Tuple<XElement, int>(node, 1);
         }
 
-        public void AddField(XElement container, string name, object value, bool isMap)
+        public XElement AddField(XElement container, string name, object value, bool isMap)
         {
+            XElement e = null;
             if (value == null)
             {
-                container.Add(new XElement(name));
+                e = new XElement(name);
+                container.Add(e);
             }
             else
             {
                 if (isMap)
                 {
-                    var e = new XElement("entry",
+                    e = new XElement("entry",
                                     new XElement("string", name),
                                     new XElement("string", value));
                     container.Add(e);
                 }
                 else
                 {
-                    container.Add(new XElement(name, value));
+                    e = new XElement(name, value);
+                    container.Add(e);
                 }
 
             }
+            return e;
 
+        }
+
+        public void ModifyField(XElement field, object value)
+        {
+            field.Value += (string)value;
         }
 
         public Tuple<XElement, int> AddMapNode(XElement container, string name)
@@ -177,9 +191,19 @@ namespace ConvertLib
             return new Tuple<JContainer, int>(obj, 2);
         }
 
-        public void AddField(JContainer container, string name, object value, bool isMap)
+        public JContainer AddField(JContainer container, string name, object value, bool isMap)
         {
-            container.Add(new JProperty(name, value));
+            var node = new JProperty(name, value);
+            container.Add(node);
+            return node;
+        }
+
+        public void ModifyField(JContainer container, object value)
+        {
+            if (container is JProperty o)
+            {
+                o.Value += (string)value;
+            }
         }
 
         public void AddSimpleField(JContainer container, object value)

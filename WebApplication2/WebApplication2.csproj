@@ -25,6 +25,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Properties\PublishProfiles\JLog - Web Deploy.pubxml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ConvertLib\ConvertLib.csproj" />
   </ItemGroup>
 
