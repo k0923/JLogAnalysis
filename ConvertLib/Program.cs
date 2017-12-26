@@ -11,7 +11,7 @@ namespace ConvertLib
     {
         public static void Main(string[] args)
         {
-            var log = File.ReadAllText("Log.txt");
+            var log = File.ReadAllText("Log1.txt");
 
             //var converter = new XmlToBean();
             //XElement root = XElement.Parse(log);

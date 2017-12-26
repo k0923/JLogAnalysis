@@ -1,5 +1,5 @@
 ﻿com.alipay.mshopcenter.common.service.facade.model.request.ShopCreateRequest@51cab489[
-	partnerId=2088101118574628,
+	partnerId=20881=01118574,628,
 	isvPid=2088202872023141,
 	isvUid=1513240431999,
 	creator=1,2,3,

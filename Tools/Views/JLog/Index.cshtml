@@ -1,0 +1,39 @@
+﻿@model Tools.Models.JLogModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<p></p>
+
+<form role="form" method="post" action="~/jlog/submit">
+    <div class="col-lg-6">
+        <div class="form-group">
+            <textarea class="form-control" rows="35" name="LogData">@Model?.LogData</textarea>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="form-group">
+            <textarea class="form-control" rows="35" name="Result">@Model?.Result</textarea>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 col-lg-offset-3">
+            <select asp-for="ConvertType" asp-items="@Html.GetEnumSelectList<ConvertType>()"></select>
+        </div>
+        
+
+        <div class="col-lg-3">
+            <input type="submit" name="submit" value="submit" class="btn-primary" />
+        </div>
+    </div>
+    
+    
+</form>
+
+
+
+    
+
+
+
+

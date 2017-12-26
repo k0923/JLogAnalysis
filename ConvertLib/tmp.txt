@@ -1,181 +1,269 @@
 {
-  "MerchantActivityCreateRequest": {
-    "outBizNo": "outBizNo-43483624718",
-    "name": "单品代金",
-    "sourceType": "ISV",
-    "sourceChannel": "2088101118574628",
-    "possessorInfo": {
-      "ownerId": "2088101118574628",
-      "ownerType": "MER"
+  "com.alipay.mshopcenter.common.service.facade.model.request.ShopCreateRequest@51cab489": {
+    "partnerId": "20881=01118574,628",
+    "isvPid": "2088202872023141",
+    "isvUid": "1513240431999",
+    "creator": "1,2,3",
+    "dataSource": {
+      "dataSourceType": "SALES_MG",
+      "originalShopId": null,
+      "originalPrincipalId": null
     },
-    "startTime": "TueJul2500:00:00CST2017",
-    "endTime": "ThuJul1200:00:00CST2018",
-    "type": "DIRECT_SEND",
-    "autoDelayFlag": null,
-    "desc": "test",
-    "budgetInfo": {
-      "type": "QUANTITY",
-      "budgetTotal": "10453",
-      "subDimension": null,
-      "subValue": null
+    "display": "false",
+    "displayStatus": "1",
+    "createChannel": "PC",
+    "shopStatus": "OPEN",
+    "createRole": "SALES_STAFF",
+    "facePayStatus": "EFFECTIVE",
+    "bizSource": "KOUBEI",
+    "staffRelations": [
+      {
+        "principalId": "40447",
+        "principalType": "JOB_STAFF",
+        "merchantPrincipal": {
+          "principalId": "KOUBEI",
+          "principalType": "KOUBEI"
+        },
+        "shopId": null,
+        "partnerId": "2088202872023141",
+        "source": "SHOP_CREATION",
+        "relationType": "AGENT_OPERATION",
+        "description": null,
+        "gmtCreate": null,
+        "gmtModified": null,
+        "extInfo": {}
+      },
+      {
+        "principalId": "40447",
+        "principalType": "JOB_STAFF",
+        "merchantPrincipal": {
+          "principalId": "KOUBEI",
+          "principalType": "KOUBEI"
+        },
+        "shopId": null,
+        "partnerId": "2088202872023141",
+        "source": "SHOP_CREATION",
+        "relationType": "SALES",
+        "description": null,
+        "gmtCreate": null,
+        "gmtModified": null,
+        "extInfo": {}
+      }
+    ],
+    "shopLimit": {
+      "categoryLimitList": [
+        {
+          "cityId": "310100",
+          "limitCategory": [
+            "2015050700000010"
+          ]
+        }
+      ]
     },
-    "constraintInfo": {
-      "userWinCount": "5",
-      "userWinFrequency": "D||4",
-      "crowdGroupId": "",
-      "crowdRestriction": null,
-      "crowdRestrictionValue": null,
-      "fundPoolId": null,
-      "thirdPartyRatio": null,
-      "merchantId": null,
-      "suitShops": [
-        "2017071100077000000004449500"
+    "smId": "1513240432002",
+    "headShopName": "门店_1513240431970",
+    "shopName": "口碑基础测试_分店名_创建_1513240431972",
+    "brand": {
+      "id": "2015050700000000",
+      "name": "其它品牌",
+      "logo": null,
+      "status": "EFFECT",
+      "type": "COMMON",
+      "level": null,
+      "categoryId": null,
+      "description": null,
+      "gmtCreate": null,
+      "gmtModified": null
+    },
+    "categoryList": [
+      "2015091000060134"
+    ],
+    "localization": {
+      "address": "上海市浦东新区民生路1199弄",
+      "addressMemo": "地址Memo",
+      "region": {
+        "countryId": "156",
+        "countryName": "中国",
+        "provinceId": "310000",
+        "provinceName": "上海",
+        "cityId": "310100",
+        "cityName": "上海市",
+        "districtId": "310115",
+        "districtName": "浦东新区"
+      },
+      "longitude": "121.549728",
+      "latitude": "31.226948",
+      "businessAreaId": null
+    },
+    "mobileNo": "15800648661",
+    "landlineNo": "0230920343",
+    "notifyMobileList": [
+      {
+        "mobileNo": "15800648669",
+        "needNotify": "true"
+      },
+      {
+        "mobileNo": "15800648662",
+        "needNotify": "false"
+      }
+    ],
+    "logo": {
+      "location": "--sZxLHdQku_lw0b9UwsjQAAACMAAQQD_123",
+      "name": "门店内景",
+      "score": null,
+      "seq": "-1",
+      "source": null,
+      "meta": null,
+      "pictureSuit": null
+    },
+    "cover": {
+      "location": "--sZxLHdQku_lw0b9UwsjQAAACMAAQQD_234",
+      "name": "门店内景",
+      "score": null,
+      "seq": "-1",
+      "source": null,
+      "meta": null,
+      "pictureSuit": null
+    },
+    "pictureDetails": [
+      {
+        "location": "--sZxLHdQku_lw0b9UwsjQAAACMAAQQD",
+        "name": "门店内景",
+        "score": null,
+        "seq": "-1",
+        "source": null,
+        "meta": null,
+        "pictureSuit": null
+      },
+      {
+        "location": "-2fdoYFNTYGMeELUfykfmQAAACMAAQQD",
+        "name": "门店内景",
+        "score": null,
+        "seq": "-1",
+        "source": null,
+        "meta": null,
+        "pictureSuit": null
+      },
+      {
+        "location": "-WeiTFsCTGaUd6DOka8c1QAAACMAAQED",
+        "name": "门店内景",
+        "score": null,
+        "seq": "-1",
+        "source": null,
+        "meta": null,
+        "pictureSuit": null
+      },
+      {
+        "location": "-Z-L-IVNQ0OT4C8dk3D2MgAAACMAAQQD",
+        "name": "门店内景",
+        "score": null,
+        "seq": "-1",
+        "source": null,
+        "meta": null,
+        "pictureSuit": null
+      }
+    ],
+    "implementIdSet": [
+      "1513240431986"
+    ],
+    "payeeUserId": "1513240431989",
+    "businessTime": "周一-周日08:00-20:30",
+    "perPay": "1.00",
+    "desc": "创建店铺_1513240431992",
+    "outShopId": "1513240431993",
+    "businessData": {
+      "certificatePicture": {
+        "location": "KubPDiBES1mlxBaLnvoi0AAAACMAAQED",
+        "name": null,
+        "score": null,
+        "seq": "-1",
+        "source": null,
+        "meta": null,
+        "pictureSuit": null
+      },
+      "certificateValidTime": "长期",
+      "licensePicture": {
+        "location": "XzRtV0wUQAabHdnHI8pVBgAAACMAAQED",
+        "name": null,
+        "score": null,
+        "seq": "-1",
+        "source": null,
+        "meta": null,
+        "pictureSuit": null
+      },
+      "licenseValidTime": "长期",
+      "licenseSeq": "543534254235",
+      "licenseName": "gfdgsf",
+      "authorizationPicture": {
+        "location": "3vVOQ0dsQQ2pFeAooMpuxwAAACMAAQED",
+        "name": null,
+        "score": null,
+        "seq": "-1",
+        "source": null,
+        "meta": null,
+        "pictureSuit": null
+      },
+      "otherAuthorization": null,
+      "thirdAuthorization": null,
+      "shopType": null,
+      "tradingVolumes": null,
+      "signedIntention": null,
+      "businessType": null,
+      "employeesNum": null,
+      "registeredCapital": null,
+      "customerGroups": null,
+      "businessPlace": null,
+      "managementInfo": null,
+      "gmtCreate": null,
+      "gmtModified": null,
+      "extInfo": {}
+    },
+    "keyPerson": {
+      "kpName": "承佑",
+      "kpTelNo": "15800648661",
+      "kpJob": "SHOP_OTHER"
+    },
+    "serviceData": {
+      "serviceDetails": [
+        {
+          "key": "PARKING",
+          "name": "停车位",
+          "isSupported": "false",
+          "serviceDesc": []
+        },
+        {
+          "key": "WIFI",
+          "name": "WIFI",
+          "isSupported": "false",
+          "serviceDesc": []
+        },
+        {
+          "key": "BOX",
+          "name": "包间",
+          "isSupported": "false",
+          "serviceDesc": []
+        },
+        {
+          "key": "NO_SMOKING",
+          "name": "无烟区",
+          "isSupported": "false",
+          "serviceDesc": []
+        }
       ],
-      "minCost": null,
-      "itemIds": [],
-      "whiteListId": null,
-      "isIsvKoufuActivity": "false"
+      "otherShowInfo": null
     },
-    "promoTools": [
-      {
-        "isCreate": "0",
-        "promoToolId": null,
-        "voucherNo": null,
-        "voucher": {
-          "type": "MONEY",
-          "name": "单代名",
-          "subTitle": "单代品牌",
-          "brandName": "单代品牌",
-          "useInstructions": [],
-          "logo": "1T8Pp00AT7eo9NoAJkMR3AAAACMAAQEC",
-          "voucherImg": "1T8Pp00AT7eo9NoAJkMR3AAAACMAAQEC",
-          "rate": "0.38",
-          "maxAmount": "",
-          "worthValue": "20",
-          "reduceRanges": null,
-          "donateFlag": "true",
-          "validateType": "FIXED",
-          "verifyMode": null,
-          "multiUseMode": null,
-          "startTime": "WedJul1200:00:00CST2017",
-          "endTime": "SatJul1400:00:00CST2018",
-          "relativeTime": "",
-          "useRule": {
-            "availableTime": [
-              {
-                "dimension": "W",
-                "values": "1,3,5",
-                "times": "00:00:00,23:59:00"
-              },
-              {
-                "dimension": "W",
-                "values": "2,4,6",
-                "times": "00:00:00,23:59:00"
-              }
-            ],
-            "forbiddenTime": {
-              "days": "2016-03-03,2016-03-08^2016-10-01,2016-10-01"
-            },
-            "suitShops": [
-              "2017071100077000000004449500"
-            ],
-            "minConsume": "10",
-            "paychannels": null,
-            "payRedirectUrl": null,
-            "extInfo": {}
-          },
-          "effectType": "IMMEDIATELY",
-          "delayInfo": {
-            "type": "ABSOLUTELY",
-            "value": "1440"
-          },
-          "itemInfo": {
-            "itemText": "迪斯尼text",
-            "itemName": "迪斯尼",
-            "itemImgs": [
-              "1T8Pp00AT7eo9NoAJkMR3AAAACMAAQEC"
-            ],
-            "itemLink": "",
-            "originalPrice": "100",
-            "maxDiscountNum": "2",
-            "totalMaxDiscountNum": null,
-            "minConsumeNum": null,
-            "itemIds": [
-              "444445555"
-            ],
-            "itemDiscountRule": null
-          },
-          "desc": "券的详细描述",
-          "clauseTerms": [
-            {
-              "title": "XXX1",
-              "descriptions": [
-                "xx1",
-                "xx2"
-              ]
-            },
-            {
-              "title": "XXX2",
-              "descriptions": [
-                "xx3",
-                "xx4"
-              ]
-            }
-          ],
-          "displayConfig": {
-            "slogan": "券标语slogan",
-            "sloganImg": "1T8Pp00AT7eo9NoAJkMR3AAAACMAAQEC"
-          },
-          "voucherNote": null,
-          "extInfo": {},
-          "subtype": null
-        },
-        "pointCard": null,
-        "sendType": null,
-        "sendRule": {
-          "minCost": "10",
-          "sendNum": null,
-          "sendBudget": null,
-          "allowRepeatSend": null
-        },
-        "status": null
-      }
-    ],
-    "publishChannels": [
-      {
-        "type": "QR_CODE",
-        "name": "ChannelQRCode",
-        "config": {},
-        "extInfo": {}
-      },
-      {
-        "type": "SHORT_LINK",
-        "name": "ChannelShortLink",
-        "config": {},
-        "extInfo": {}
-      },
-      {
-        "type": "SHOP_DETAIL",
-        "name": "SHOP_DETAILName",
-        "config": {},
-        "extInfo": {}
-      },
-      {
-        "type": "PAYMENT_RESULT",
-        "name": "PAYMENT_RESULTName",
-        "config": {},
-        "extInfo": {}
-      }
-    ],
-    "notifyInfoDTO": null,
-    "exterfaceInvokeJson": "null",
-    "isObtainRelativeInfo": "false",
-    "bizContextInfos": {},
-    "extInfos": {
-      "isv_app_id": "2015102400040091",
-      "ENABLED_TRIGGER_TYPE": "AUTO",
-      "CAMPAIGN_REGION_SUMMARY": "",
-      "STARTED_TRIGGER_TYPE": "AUTO"
-    }
+    "bankCardNo": "1513240431996",
+    "notifyUrl": "http://www.taobao.com",
+    "slogan": "随便吧，无所谓",
+    "payType": "online_pay",
+    "extInfo": {
+      "certifyLevel": "L2",
+      "isSupportH5": "false",
+      "jobId": "1000000010017596",
+      "opRole": "S_STAFF"
+    },
+    "outBizId": "1513240431998",
+    "shopType": "COMMON",
+    "shopId": null
   }
 }

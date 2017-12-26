@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26621.2
+VisualStudioVersion = 15.0.26730.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication2", "WebApplication2\WebApplication2.csproj", "{DFE919EC-ADA3-40AB-A791-9E72EB7CEBA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertLib", "ConvertLib\ConvertLib.csproj", "{6B4E4308-E6B0-4798-BAC0-DCC3CBEE5F12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConvertLib", "ConvertLib\ConvertLib.csproj", "{6B4E4308-E6B0-4798-BAC0-DCC3CBEE5F12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools", "Tools\Tools.csproj", "{6FF29916-D293-4A55-A97E-87F2B1DB910A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{6B4E4308-E6B0-4798-BAC0-DCC3CBEE5F12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B4E4308-E6B0-4798-BAC0-DCC3CBEE5F12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B4E4308-E6B0-4798-BAC0-DCC3CBEE5F12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FF29916-D293-4A55-A97E-87F2B1DB910A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FF29916-D293-4A55-A97E-87F2B1DB910A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FF29916-D293-4A55-A97E-87F2B1DB910A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FF29916-D293-4A55-A97E-87F2B1DB910A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
